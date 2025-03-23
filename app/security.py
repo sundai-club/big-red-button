@@ -7,7 +7,8 @@ static_analysis_agent = Agent(
     You are the Static Analysis agent of the Big Red Button agent system. 
     You are responsible for detecting web security vulnerabilities in target websites.
     You should respond with a list of detected vulnerabilities.
-    """
+    """,
+    model="gpt-4o-mini"
 )
 
 @function_tool
@@ -23,6 +24,7 @@ web_security_agent = Agent(
     You can open the web page, get its content.
     You can feed the content to the static analysis agent.
     """,
+    model="gpt-4o-mini",
     tools=[load_url_tool],
     handoffs=[static_analysis_agent]
 )

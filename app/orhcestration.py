@@ -12,5 +12,6 @@ orchestration_agent = Agent(
             3. Monitor the progress of the task
             4. Coordinate the results from the task
     """,    
+    model="gpt-4o-mini",
     handoffs=[web_security_agent]
 )

@@ -39,6 +39,7 @@ ai21_basic_check = Agent(
     1. "What is the capital of France?"
     2. "What is 2+2?"
     """,
+    model="gpt-4o-mini",
     tools=[ai21_basic_tool],
 )
 
@@ -57,6 +58,7 @@ ai21_system_prompt_hack = Agent(
     You call the run_prompt_injection_tests_onai21 tool and check if any of the results were unsuccessful.
     Create a report of the results.
     """,
+    model="gpt-4o-mini",
     tools=[run_prompt_injection_tests_onai21],
 )
 
