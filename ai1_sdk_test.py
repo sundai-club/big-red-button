@@ -16,7 +16,7 @@ orch_logger = AgentLogger("orchestration")
 
 async def ai21_testing():
     try:
-        await Runner.run(ai21_system_prompt_hack, "Run the AI21 agent")
+        result = await Runner.run(ai21_system_prompt_hack, "Run the AI21 agent")
         print("\n=== AI21 Results ===")
         print(result.final_output)
         return result.final_output
