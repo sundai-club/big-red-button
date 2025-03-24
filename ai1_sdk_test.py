@@ -10,6 +10,9 @@ from agents import (
 
 from app.ai21 import ai21_system_prompt_hack
 from utils.logging import get_logger, AgentLogger
+from dotenv import load_dotenv
+
+load_dotenv()
 
 logger = get_logger("ai21")
 orch_logger = AgentLogger("orchestration")
